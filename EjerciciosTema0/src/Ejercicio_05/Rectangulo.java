@@ -12,26 +12,29 @@ public class Rectangulo extends Figura{
 		protected double lado1, lado2;
 
 		public Rectangulo(double lado1, double lado2) {
+			super.color = "blanco";
+			super.punto = new Punto(0,0);
+			super.setNombreForma("Rectangulo");
 			this.lado1 = lado1;
 			this.lado2 = lado2;
 		}
 		
 		@Override
 		public double calcularArea() {
-			// TODO Auto-generated method stub
-			return 0;
+			double area = lado1 * lado2;
+			return area;
 		}
 
 		@Override
 		public double calcularPerimetro() {
-			// TODO Auto-generated method stub
-			return 0;
+			double perimetro = lado1*2 + lado2*2;			
+			return perimetro;
 		}
 
 		@Override
 		public String toString() {
-			// TODO Auto-generated method stub
-			return null;
+			return super.nombreForma + super.color + " de  centro (" + punto.getCoordenadaX() + "," + punto.getCoordenadaY() + ") área " + calcularArea() 
+			+ " y perímetro " + calcularPerimetro();
 		}
 
 		public double getLado1() {

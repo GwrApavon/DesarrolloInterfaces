@@ -9,8 +9,9 @@ package Ejercicio_05;
  */
 public class Cuadrado extends Rectangulo {
 
-	public Cuadrado(double lado1, double lado2) {
-		super(lado1, lado2);
+	public Cuadrado(double lado) {
+		super(lado, lado);
+		super.setNombreForma("Cuadrado");
 		// TODO Auto-generated constructor stub
 	}
 
