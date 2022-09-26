@@ -1,0 +1,11 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\bin\Debug\NavegadorWeb.exe.config
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\bin\Debug\NavegadorWeb.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\bin\Debug\NavegadorWeb.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\obj\Debug\NavegadorWeb.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\obj\Debug\NavegadorWeb.csproj.SuggestedBindingRedirects.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\obj\Debug\NavegadorWeb.Form1.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\obj\Debug\NavegadorWeb.Properties.Resources.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\obj\Debug\NavegadorWeb.csproj.GenerateResource.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\obj\Debug\NavegadorWeb.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\obj\Debug\NavegadorWeb.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\NavegadorWeb\obj\Debug\NavegadorWeb.pdb
