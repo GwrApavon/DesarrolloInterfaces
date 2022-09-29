@@ -1,0 +1,15 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\bin\Debug\net6.0\Ejercicio_02.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\bin\Debug\net6.0\Ejercicio_02.deps.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\bin\Debug\net6.0\Ejercicio_02.runtimeconfig.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\bin\Debug\net6.0\Ejercicio_02.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\bin\Debug\net6.0\Ejercicio_02.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\Ejercicio_02.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\Ejercicio_02.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\Ejercicio_02.AssemblyInfoInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\Ejercicio_02.AssemblyInfo.cs
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\Ejercicio_02.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\Ejercicio_02.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\refint\Ejercicio_02.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\Ejercicio_02.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\Ejercicio_02.genruntimeconfig.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_02\obj\Debug\net6.0\ref\Ejercicio_02.dll
