@@ -1,0 +1,15 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\EjercicioFigura.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\EjercicioFigura.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\EjercicioFigura.AssemblyInfoInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\EjercicioFigura.AssemblyInfo.cs
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\EjercicioFigura.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\bin\Debug\net6.0\EjercicioFigura.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\bin\Debug\net6.0\EjercicioFigura.deps.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\bin\Debug\net6.0\EjercicioFigura.runtimeconfig.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\bin\Debug\net6.0\EjercicioFigura.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\bin\Debug\net6.0\EjercicioFigura.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\EjercicioFigura.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\refint\EjercicioFigura.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\EjercicioFigura.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\EjercicioFigura.genruntimeconfig.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFigura\obj\Debug\net6.0\ref\EjercicioFigura.dll

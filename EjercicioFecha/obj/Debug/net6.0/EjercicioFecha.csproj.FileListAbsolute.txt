@@ -1,0 +1,15 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\EjercicioFecha.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\EjercicioFecha.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\EjercicioFecha.AssemblyInfoInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\EjercicioFecha.AssemblyInfo.cs
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\EjercicioFecha.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\bin\Debug\net6.0\EjercicioFecha.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\bin\Debug\net6.0\EjercicioFecha.deps.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\bin\Debug\net6.0\EjercicioFecha.runtimeconfig.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\bin\Debug\net6.0\EjercicioFecha.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\bin\Debug\net6.0\EjercicioFecha.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\EjercicioFecha.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\refint\EjercicioFecha.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\EjercicioFecha.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\EjercicioFecha.genruntimeconfig.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\EjercicioFecha\obj\Debug\net6.0\ref\EjercicioFecha.dll
