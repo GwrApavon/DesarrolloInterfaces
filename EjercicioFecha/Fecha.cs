@@ -41,7 +41,7 @@ namespace EjercicioFecha
 
 			switch (mes)
 			{
-				case  1:
+				case 1:
 					Udia = 31;
 					break;
                 case 3:
