@@ -1,0 +1,11 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\bin\Debug\Tragaperras.exe.config
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\bin\Debug\Tragaperras.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\bin\Debug\Tragaperras.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\obj\Debug\Tragaperras.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\obj\Debug\Tragaperras.csproj.SuggestedBindingRedirects.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\obj\Debug\Tragaperras.Properties.Resources.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\obj\Debug\Tragaperras.csproj.GenerateResource.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\obj\Debug\Tragaperras.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\obj\Debug\Tragaperras.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\obj\Debug\Tragaperras.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Tragaperras\obj\Debug\Tragaperras.Form1.resources
