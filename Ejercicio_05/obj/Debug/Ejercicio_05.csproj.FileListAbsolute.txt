@@ -1,0 +1,11 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\bin\Debug\Ejercicio_05.exe.config
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\bin\Debug\Ejercicio_05.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\bin\Debug\Ejercicio_05.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\obj\Debug\Ejercicio_05.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\obj\Debug\Ejercicio_05.csproj.SuggestedBindingRedirects.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\obj\Debug\Ejercicio_05.Form1.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\obj\Debug\Ejercicio_05.Properties.Resources.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\obj\Debug\Ejercicio_05.csproj.GenerateResource.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\obj\Debug\Ejercicio_05.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\obj\Debug\Ejercicio_05.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Ejercicio_05\obj\Debug\Ejercicio_05.pdb
