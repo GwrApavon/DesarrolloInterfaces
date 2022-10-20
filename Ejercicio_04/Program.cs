@@ -8,7 +8,7 @@ public class Program
              int top = 0;
              int left = 0;  
              for (int k = 0; ; )
-            {
+             {
                 DibujarCuadro();
                 DibujarOpciones(k);
                 ConsoleKeyInfo cki = Console.ReadKey(true);
@@ -107,6 +107,7 @@ public class Program
                                 aciertos++;
                             }
                         }
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("El número de aciertos es: " + aciertos);
         }
 

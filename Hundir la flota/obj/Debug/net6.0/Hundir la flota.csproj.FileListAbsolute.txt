@@ -1,0 +1,15 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\Hundir la flota.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\Hundir la flota.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\Hundir la flota.AssemblyInfoInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\Hundir la flota.AssemblyInfo.cs
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\Hundir la flota.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\bin\Debug\net6.0\Hundir la flota.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\bin\Debug\net6.0\Hundir la flota.deps.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\bin\Debug\net6.0\Hundir la flota.runtimeconfig.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\bin\Debug\net6.0\Hundir la flota.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\bin\Debug\net6.0\Hundir la flota.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\Hundir la flota.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\refint\Hundir la flota.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\Hundir la flota.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\Hundir la flota.genruntimeconfig.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir la flota\obj\Debug\net6.0\ref\Hundir la flota.dll
