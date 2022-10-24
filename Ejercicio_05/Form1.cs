@@ -32,33 +32,21 @@ namespace Ejercicio_05
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void add_Click(object sender, EventArgs e)
         {
-            label2.Text += textBox1.Text;
-            label2.Visible = true;
-            si.Visible = true;
-            no.Visible = true;
+            DialogResult a;
+            a = MessageBox.Show("Cambio Título", "Desea cambiar el título del formulario?",
+                                MessageBoxButtons.YesNo, 
+                                MessageBoxIcon.Question,
+                                MessageBoxDefaultButton.Button2);
         }
 
-        private void si_Click(object sender, EventArgs e)
-        {
-            this.Text = textBox1.Text;
-            label2.Visible = false;
-            si.Visible = false;
-            no.Visible = false;
-        }
-
-        private void no_Click(object sender, EventArgs e)
-        {
-            
-            label2.Visible = false;
-            si.Visible = false;
-            no.Visible = false;
-        }
+        public static extern DialogResult Show(string text,
+                                         string caption,
+                                         MessageBoxButtons buttons,
+                                         MessageBoxIcon icon,
+                                         MessageBoxDefaultButton defaultButton);
     }
+
 }

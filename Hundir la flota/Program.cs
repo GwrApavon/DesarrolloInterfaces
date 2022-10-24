@@ -6,8 +6,11 @@ public class Program
     {
         if (ImprimirMenuInicio())
         {   
-            int x=0,y=0;
-            GenerarBarco(x,y);
+            int x=51,y=7;
+            Random rnd = new Random();
+            x = rnd.Next(51,70);
+            y = rnd.Next(7,15);
+            Console.ReadLine();
             ImprimirTablero();
             MoverFlechas(x,y);
         }
@@ -36,7 +39,6 @@ public class Program
             ConsoleKeyInfo cki = Console.ReadKey(true);
             if (cki.Key == ConsoleKey.Enter)
             {
-                Console.Clear();
                 return true;
             }
             else
@@ -46,30 +48,21 @@ public class Program
                 Console.WriteLine("Número de veces que no sabes presionar una tecla:" + k);
             }
         }
-
-        return false;
-    }
-
-    // GENERA LA POSICION DEL BARCO
-    public void GenerarBarco(int x, int y)
-    {
-        Random rnd = new Random();
-        x = rnd.Next(51,71);
-        y = rnd.Next(51,71);
     }
 
     // IMPRIME EL TABLERO DE JUEGO
     public static void ImprimirTablero()
     {
+        Console.Clear();
         Console.SetCursorPosition(50,6);
         Console.WriteLine("+--------------------+");
          for(int i = 1; i <= 10; i++)
-            {
+         {
                 Console.SetCursorPosition(50,6+i);
                 Console.WriteLine("|");
                 Console.SetCursorPosition(71,6+i);
                 Console.WriteLine("|");
-            }
+         }
          Console.SetCursorPosition(50,16);
          Console.WriteLine("+--------------------+");
 
@@ -80,19 +73,11 @@ public class Program
     {
         bool ejecutar = false;
         int y = 7;
-        for(int x= 51; ; ){
-           
+        for(int x= 51; ; )
+        {
            Console.SetCursorPosition(x,y);
-           Console.BackgroundColor = ConsoleColor.White;
-           Console.WriteLine(" ");
            
-           
-
            ConsoleKeyInfo cki = Console.ReadKey(true);
-
-           Console.SetCursorPosition(x,y);
-           Console.BackgroundColor = ConsoleColor.Black;
-           Console.WriteLine(" ");
                 
            switch (cki.Key)
            {
@@ -111,17 +96,28 @@ public class Program
 
             if(ejecutar)
             {
-                if (x == bx && y == by))
+                ejecutar = false;
+                if (x == bx && y == by)
                 {
                     Console.BackgroundColor= ConsoleColor.Black;    
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("O");
+                    Console.WriteLine("o");
 
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.SetCursorPosition(55,18);
                     Console.WriteLine("HAS GANADO!");
+                    Console.ReadLine();
+                    return;
+                    
                 }
-                else()
+                else
+                {
+                    Console.BackgroundColor = ConsoleColor.Black;    
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("X");
+                }
+
+                Console.SetCursorPosition(x,y);
             }
            
         }
