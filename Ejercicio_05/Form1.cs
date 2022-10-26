@@ -36,17 +36,16 @@ namespace Ejercicio_05
         private void add_Click(object sender, EventArgs e)
         {
             DialogResult a;
-            a = MessageBox.Show("Cambio Título", "Desea cambiar el título del formulario?",
-                                MessageBoxButtons.YesNo, 
+            a = MessageBox.Show(("Desea cambiar el título del formulario a " + textBox1.Text), "Cambio Título",
+                                MessageBoxButtons.YesNo,
                                 MessageBoxIcon.Question,
                                 MessageBoxDefaultButton.Button2);
-        }
 
-        public static extern DialogResult Show(string text,
-                                         string caption,
-                                         MessageBoxButtons buttons,
-                                         MessageBoxIcon icon,
-                                         MessageBoxDefaultButton defaultButton);
+            if(a == DialogResult.Yes)
+            {
+                this.Text = textBox1.Text;
+            }
+        }
     }
 
 }

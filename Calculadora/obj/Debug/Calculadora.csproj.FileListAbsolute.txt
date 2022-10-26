@@ -1,0 +1,11 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\bin\Debug\Calculadora.exe.config
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\bin\Debug\Calculadora.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\bin\Debug\Calculadora.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\obj\Debug\Calculadora.csproj.SuggestedBindingRedirects.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\obj\Debug\Calculadora.Form1.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\obj\Debug\Calculadora.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Calculadora\obj\Debug\Calculadora.pdb
