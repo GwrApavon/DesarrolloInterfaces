@@ -1,19 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculadora
 {
     public partial class Form1 : Form
     {
-         int opcion = 0;
-         double num1 = 0.0, num2 = 0.0;
+        int opcion = 0;
+        double num = 0.0, res = 0.0;
         public Form1()
         {
             InitializeComponent();
@@ -25,11 +18,11 @@ namespace Calculadora
 
         }
 
-        
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
         private void button0_Click(object sender, EventArgs e)
         {
@@ -157,38 +150,74 @@ namespace Calculadora
             Pantalla.Text += ",";
         }
         //Boton MasMenos
-        private void buttonMasMenos_Click(object sender, EventArgs e)
+        private void buttonCambioSingo_Click(object sender, EventArgs e)
         {
-
+            Pantalla.Text = Convert.ToString( - Convert.ToInt32(Pantalla.Text));
         }
-       
+
         //Boton Mas
         private void buttonMas_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(Pantalla.Text);
+            num = Convert.ToDouble(Pantalla.Text);
+            if (res != 0)
+            {
+                res += num;
+                Pantalla.Text = "0";
+            }
+            else
+            {
+                res = num;
+                Pantalla.Text = "0";
+            }
             opcion = 0;
-            Pantalla.Text = "0";
         }
         //Boton Menos
         private void buttonMenos_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(Pantalla.Text);
+            num = Convert.ToDouble(Pantalla.Text);
+            if (res != 0)
+            {
+                res -= num;
+                Pantalla.Text = "0";
+            }
+            else
+            {
+                res = num;
+                Pantalla.Text = "0";
+            }
             opcion = 1;
-            Pantalla.Text = "0";
         }
         //Boton Por
         private void buttonPor_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(Pantalla.Text);
+            num = Convert.ToDouble(Pantalla.Text);
+            if (res != 0)
+            {
+                res *= num;
+                Pantalla.Text = "0";
+            }
+            else
+            {
+                res = num;
+                Pantalla.Text = "0";
+            }
             opcion = 2;
-            Pantalla.Text = "0";
         }
         //Boton Division
         private void buttonDiv_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(Pantalla.Text);
+            num = Convert.ToDouble(Pantalla.Text);
+            if (res != 0)
+            {
+                res /= num;
+                Pantalla.Text = "0";
+            }
+            else
+            {
+                res = num;
+                Pantalla.Text = "0";
+            }
             opcion = 3;
-            Pantalla.Text = "0";
         }
         //Boton Delete
         private void buttonDel_Click(object sender, EventArgs e)
@@ -197,7 +226,7 @@ namespace Calculadora
             {
                 Pantalla.Text = Pantalla.Text.Remove(Pantalla.Text.Length - 1, 1);
             }
-            if(Pantalla.Text.Length == 0)
+            if (Pantalla.Text.Length == 0)
             {
                 Pantalla.Text = "0";
             }
@@ -212,28 +241,56 @@ namespace Calculadora
         {
             Pantalla.Text = "0";
             opcion = 0;
-            num1 = 0;
-            num2 = 0;
+            num = 0;
+            res = 0;
         }
+
+        private void porcentaje_Click(object sender, EventArgs e)
+        {
+            num = Convert.ToDouble(Pantalla.Text)/100;
+            Pantalla.Text = Convert.ToString(num);
+        }
+
+        private void raiz_Click(object sender, EventArgs e)
+        {
+            res = Math.Sqrt(Convert.ToDouble(Pantalla.Text));
+            Pantalla.Text = Convert.ToString(res);
+        }
+
+        private void cuadrado_Click(object sender, EventArgs e)
+        {
+            res = Math.Pow(Convert.ToDouble(Pantalla.Text), 2);
+            Pantalla.Text = Convert.ToString(res);
+        }
+
+        private void invert_Click(object sender, EventArgs e)
+        {
+            res = 1/Convert.ToDouble(Pantalla.Text);
+            Pantalla.Text = Convert.ToString(res);
+        }
+
         //Boton Igual
-         private void buttonIgual_Click(object sender, EventArgs e)
-         {
-            num2 = Convert.ToDouble(Pantalla.Text);
-             switch (opcion)
-             {
-                 case 0:
-                     Pantalla.Text = Convert.ToString(num1 + num2);
-                     break;
-                 case 1:
-                     Pantalla.Text = Convert.ToString(num1 - num2);
-                     break;
-                 case 2:
-                     Pantalla.Text = Convert.ToString(num1 * num2);
-                     break;
-                 case 3:
-                     Pantalla.Text = Convert.ToString(num1 / num2);
-                     break;
-             }
+        private void buttonIgual_Click(object sender, EventArgs e)
+        {
+            num = Convert.ToDouble(Pantalla.Text);
+            switch (opcion)
+            {
+                case 0:
+                    Pantalla.Text = Convert.ToString(res + num);
+                    break;
+                case 1:
+                    Pantalla.Text = Convert.ToString(res - num);
+                    break;
+                case 2:
+                    Pantalla.Text = Convert.ToString(res * num);
+                    break;
+                case 3:
+                    Pantalla.Text = Convert.ToString(res / num);
+                    break;
+            }
+
+            opcion = 0;
+            num = 0;
         }
     }
-    }
+}
