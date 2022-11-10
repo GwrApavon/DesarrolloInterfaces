@@ -1,0 +1,15 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\bin\Debug\net6.0\Hundir_v.2.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\bin\Debug\net6.0\Hundir_v.2.deps.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\bin\Debug\net6.0\Hundir_v.2.runtimeconfig.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\bin\Debug\net6.0\Hundir_v.2.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\bin\Debug\net6.0\Hundir_v.2.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\Hundir_v.2.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\Hundir_v.2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\Hundir_v.2.AssemblyInfoInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\Hundir_v.2.AssemblyInfo.cs
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\Hundir_v.2.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\Hundir_v.2.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\refint\Hundir_v.2.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\Hundir_v.2.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\Hundir_v.2.genruntimeconfig.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Hundir_v.2\obj\Debug\net6.0\ref\Hundir_v.2.dll

@@ -1,0 +1,15 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\bin\Debug\net6.0\HundirLaFlotaFinal.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\bin\Debug\net6.0\HundirLaFlotaFinal.deps.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\bin\Debug\net6.0\HundirLaFlotaFinal.runtimeconfig.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\bin\Debug\net6.0\HundirLaFlotaFinal.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\bin\Debug\net6.0\HundirLaFlotaFinal.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\HundirLaFlotaFinal.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\HundirLaFlotaFinal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\HundirLaFlotaFinal.AssemblyInfoInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\HundirLaFlotaFinal.AssemblyInfo.cs
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\HundirLaFlotaFinal.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\HundirLaFlotaFinal.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\refint\HundirLaFlotaFinal.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\HundirLaFlotaFinal.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\HundirLaFlotaFinal.genruntimeconfig.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\HundirLaFlotaFinal\obj\Debug\net6.0\ref\HundirLaFlotaFinal.dll
