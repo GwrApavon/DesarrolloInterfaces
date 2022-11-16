@@ -9,9 +9,9 @@ namespace EjerciciosObjetos_01
 {
     public class Empleado : Persona
     {
-        private double salario;
-        private int irpf;
-        private string? nTelef;
+        protected double salario;
+        protected int irpf;
+        protected string? nTelef;
 
         public double Salario
         {
@@ -102,7 +102,7 @@ namespace EjerciciosObjetos_01
             
         }
 
-        public Empleado(string nombre, string apellidos, int edad, string dni, double salario, int irpf, string? nTelef)
+        public Empleado(string nombre, string apellidos, int edad, string dni, double salario, string? nTelef)
         : base(nombre,apellidos,edad,dni)
         {
             Salario = salario;;

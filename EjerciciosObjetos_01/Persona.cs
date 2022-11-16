@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 namespace EjerciciosObjetos_01
 {
     using System;
+    using System.Reflection.PortableExecutable;
+    using System.Runtime.Intrinsics.X86;
 
     public abstract class Persona
     {
-        private string nombre;
-        private string apellidos;
-        private int edad;
-        private string dni;
+        protected string nombre;
+        protected string apellidos;
+        protected int edad;
+        protected string dni;
 
         public int Edad
         {
@@ -60,7 +62,10 @@ namespace EjerciciosObjetos_01
             }
             get
             {
-                return apellidos;
+                char letra = ' ';
+                char[] letrasDni = { 'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E' };
+                letra = letrasDni[Convert.ToInt32(dni) % 23];
+                return dni + letra;
             }
         }
 
@@ -78,11 +83,34 @@ namespace EjerciciosObjetos_01
             
         }
 
-        public string toString()
+        public virtual string ToString()
         {
             return "Nombre: " + Nombre + "\nApellidos: " + Apellidos + "\nEdad: " + Edad + "\nDni: " + Dni;
         }
 
+        public virtual void pedirDatos()
+        {
+            Console.WriteLine("Introduce tu nombre: ");
+            Nombre = Console.ReadLine();
+
+            Console.WriteLine("Introduce tus apellidos: ");
+            Apellidos = Console.ReadLine();
+
+            Console.WriteLine("Introduce tu edad: ");
+            Edad = Convert.ToInt32(Console.ReadLine());
+
+            int numericValue;
+            string aux;
+            bool isNumber;
+            do {
+                Console.WriteLine("Introduce tu dni (solo números) : ");
+                aux = Console.ReadLine();
+
+            } while (isNumber = int.TryParse(aux, out numericValue));
+            
+            
+            
+        }
         public abstract double hacienda();
     }
 }
