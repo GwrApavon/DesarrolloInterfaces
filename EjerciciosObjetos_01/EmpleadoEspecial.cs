@@ -45,7 +45,10 @@ namespace EjerciciosObjetos_01
             }
             return 0;
         }
-
+        public string ToString(double dinEmpresa)
+        {
+            return base.ToString() + "\nPorcentaje de beneficio: " + PercenBen + "\nPasta Ganada: " + ganarPasta(dinEmpresa);
+        }
         public override double hacienda()
         {
             return PastaGanada * (30.5 / 100);

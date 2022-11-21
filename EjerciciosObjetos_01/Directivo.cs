@@ -106,16 +106,22 @@ namespace EjerciciosObjetos_01
 
         public override string ToString()
         {
-            return base.ToString() + "\nNombre de departamento encargado: " + DepEncargado + "\nPorcentaje de beneficio: " + PercenBen + "%\nNúmero de personas encargadas: " + NumPersonas;
+            return base.ToString() + "\nNombre de departamento encargado: " + DepEncargado + "\nPorcentaje de beneficio: " + PercenBen + "\nNúmero de personas encargadas: " + NumPersonas
+                   + "\nPasta Ganada: ";
         }
 
+        public string ToString(double dinEmpresa)
+        {
+            return base.ToString() + "\nNombre de departamento encargado: " + DepEncargado + "\nPorcentaje de beneficio: " + PercenBen + "\nNúmero de personas encargadas: " + NumPersonas
+                   + "\nPasta Ganada: " + ganarPasta(dinEmpresa);
+        }
         public double ganarPasta(double beneficiosEmpresa)
         {
             Directivo d = this;
             if (beneficiosEmpresa > 0)
             {
                 PastaGanada = beneficiosEmpresa * (PercenBen / 100);
-                return beneficiosEmpresa * (PercenBen / 100);
+                return PastaGanada;
             }
             d--;
             return 0;
