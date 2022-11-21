@@ -19,16 +19,17 @@ namespace EjerciciosObjetos_01
             {
                 if (value > 0)
                 {
+                    
                     switch (value)
                     {
-                        case 1 when value < 10 && value > 0:
-                            percenBen = 2;
+                        case int when value < 10 && value > 0:    
+                            this.percenBen = 2;
                             break;
-                        case 2 when value > 10 && value < 51:
-                            percenBen = 3.5;
+                        case int when value > 10 && value < 51:
+                            this.percenBen = 3.5;
                             break;
-                        case 3 when value > 50:
-                            percenBen = 4;
+                        case int when value > 50:
+                            this.percenBen = 4;
                             break;
                         default: Console.WriteLine("No tienes personas a cargo");
                             break;
@@ -82,8 +83,8 @@ namespace EjerciciosObjetos_01
         public Directivo(string nombreDep,int nPersonas, string nombre, string apellidos, int edad, string dni, double salario, string? nTelef)
         : base(nombre, apellidos, edad, dni, salario,nTelef)
         {
-            this.depEncargado = nombreDep;
-            this.numPersonas = nPersonas;
+            DepEncargado = nombreDep;
+            NumPersonas = nPersonas;
         }
 
         public static Directivo operator --(Directivo d)
@@ -106,13 +107,13 @@ namespace EjerciciosObjetos_01
 
         public override string ToString()
         {
-            return base.ToString() + "\nNombre de departamento encargado: " + DepEncargado + "\nPorcentaje de beneficio: " + PercenBen + "\nNúmero de personas encargadas: " + NumPersonas
+            return base.ToString() + "\nNombre de departamento encargado: " + DepEncargado + "\nPorcentaje de beneficio: " + PercenBen + "%\nNúmero de personas encargadas: " + NumPersonas
                    + "\nPasta Ganada: ";
         }
 
         public string ToString(double dinEmpresa)
         {
-            return base.ToString() + "\nNombre de departamento encargado: " + DepEncargado + "\nPorcentaje de beneficio: " + PercenBen + "\nNúmero de personas encargadas: " + NumPersonas
+            return base.ToString() + "\nNombre de departamento encargado: " + DepEncargado + "\nPorcentaje de beneficio: " + PercenBen + "%\nNúmero de personas encargadas: " + NumPersonas
                    + "\nPasta Ganada: " + ganarPasta(dinEmpresa);
         }
         public double ganarPasta(double beneficiosEmpresa)
@@ -121,17 +122,15 @@ namespace EjerciciosObjetos_01
             if (beneficiosEmpresa > 0)
             {
                 PastaGanada = beneficiosEmpresa * (PercenBen / 100);
-                return PastaGanada;
+                return beneficiosEmpresa * (PercenBen / 100);
             }
             d--;
             return 0;
         }
-
         public override double hacienda()
         {
-            return PastaGanada * (30/100);
+            return PastaGanada * (30 / 100);
         }
-
     }
 
     

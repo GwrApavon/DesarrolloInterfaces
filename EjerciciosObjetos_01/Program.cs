@@ -10,29 +10,41 @@ public class main
         Empleado emp = new Empleado("Jose", "Perez Serrano", 41, "142783341", 1000.00, "987161349");
         EmpleadoEspecial empe = new EmpleadoEspecial("Tomás", "Palomares Carnicero", 19, "96241398", 1400.00,"");
 
-        Console.Write("Indique que quiere visualizar:" +
-                        "\n(1) - Datos del directivo" +
-                        "\n(2) - Datos del empleado" +
-                        "\n(3) - Datos del empleado especial");
-        int opt = int.Parse(Console.ReadLine());
-        switch (opt)
+        bool salir = false;
+        do
         {
-            case 1:
-                Console.Write(dir.ToString(dineroEmpresa()));
-                Console.Write("\nHacienda: " + dir.hacienda());
-                break;
-            case 2:
-                Console.Write(emp.ToString());
-                Console.Write("\nHacienda: " + emp.hacienda());
-                break;
-            case 3:
-                Console.Write(empe.ToString(dineroEmpresa()));
-                Console.Write("\nHacienda: " + empe.hacienda());
-                break;
-            default:
-                Console.WriteLine("Opción no valida");
-                break;
-        }
+            Console.Write("Indique que quiere visualizar:" +
+                            "\n(1) - Datos del directivo" +
+                            "\n(2) - Datos del empleado" +
+                            "\n(3) - Datos del empleado especial\n");
+            int opt = int.Parse(Console.ReadLine());
+            Console.Clear();
+            switch (opt)
+            {
+                case 1:
+                    Console.Write(dir.ToString(dineroEmpresa()));
+                    Console.Write("\nHacienda: " + dir.hacienda());
+                    break;
+                case 2:
+                    Console.Write(emp.ToString());
+                    Console.Write("\nHacienda: " + emp.hacienda());
+                    break;
+                case 3:
+                    Console.Write(empe.ToString(dineroEmpresa()));
+                    Console.Write("\nHacienda: " + empe.hacienda());
+                    break;
+                default:
+                    Console.WriteLine("Opción no valida");
+                    break;
+            }
+
+            Console.Write("\nQuieres salir? s/n");
+            string salida = Console.ReadLine();
+            if(salida == "s" || salida == "S")
+            {
+                salir = true;
+            }
+        } while (!salir);
     }
 
     public static double dineroEmpresa()

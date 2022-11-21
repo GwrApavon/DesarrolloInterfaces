@@ -19,13 +19,13 @@ namespace EjerciciosObjetos_01
             {
                 switch (value)
                 {
-                    case 1 when value < 600:
+                    case double when value < 600:
                         this.irpf = 7;
                         break;
-                    case 2 when value > 600 && value < 3000:
+                    case double when value > 600 && value < 3000:
                         this.irpf = 15;
                         break;
-                    case 3 when value > 3000:
+                    case double when value > 3000:
                         this.irpf = 20;
                         break;
                 }
@@ -69,7 +69,7 @@ namespace EjerciciosObjetos_01
             }
             get
             {
-                if (this.nTelef == null) return "+34" + this.nTelef;
+                if (this.nTelef != "") return "+34 " + this.nTelef;
                 else return "Numero de telefono no establecido";
             }
         }
