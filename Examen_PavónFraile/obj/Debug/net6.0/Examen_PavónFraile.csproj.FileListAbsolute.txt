@@ -1,0 +1,15 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\bin\Debug\net6.0\Examen_PavónFraile.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\Examen_PavónFraile.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\Examen_PavónFraile.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\Examen_PavónFraile.AssemblyInfoInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\Examen_PavónFraile.AssemblyInfo.cs
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\Examen_PavónFraile.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\Examen_PavónFraile.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\refint\Examen_PavónFraile.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\Examen_PavónFraile.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\bin\Debug\net6.0\Examen_PavónFraile.deps.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\bin\Debug\net6.0\Examen_PavónFraile.runtimeconfig.json
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\bin\Debug\net6.0\Examen_PavónFraile.dll
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\bin\Debug\net6.0\Examen_PavónFraile.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\Examen_PavónFraile.genruntimeconfig.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Examen_PavónFraile\obj\Debug\net6.0\ref\Examen_PavónFraile.dll

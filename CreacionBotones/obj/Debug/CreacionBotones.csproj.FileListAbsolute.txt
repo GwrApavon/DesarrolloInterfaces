@@ -1,0 +1,11 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\bin\Debug\CreacionBotones.exe.config
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\bin\Debug\CreacionBotones.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\bin\Debug\CreacionBotones.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\obj\Debug\CreacionBotones.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\obj\Debug\CreacionBotones.csproj.SuggestedBindingRedirects.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\obj\Debug\CreacionBotones.Form1.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\obj\Debug\CreacionBotones.Properties.Resources.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\obj\Debug\CreacionBotones.csproj.GenerateResource.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\obj\Debug\CreacionBotones.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\obj\Debug\CreacionBotones.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\CreacionBotones\obj\Debug\CreacionBotones.pdb
