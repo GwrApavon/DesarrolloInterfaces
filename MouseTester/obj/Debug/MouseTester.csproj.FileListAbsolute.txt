@@ -1,0 +1,11 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\bin\Debug\MouseTester.exe.config
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\bin\Debug\MouseTester.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\bin\Debug\MouseTester.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\obj\Debug\MouseTester.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\obj\Debug\MouseTester.csproj.SuggestedBindingRedirects.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\obj\Debug\MouseTester.Form1.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\obj\Debug\MouseTester.Properties.Resources.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\obj\Debug\MouseTester.csproj.GenerateResource.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\obj\Debug\MouseTester.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\obj\Debug\MouseTester.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\MouseTester\obj\Debug\MouseTester.pdb

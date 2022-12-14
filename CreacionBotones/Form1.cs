@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-    
+
 namespace CreacionBotones
 {
     public partial class Form1 : Form
@@ -26,5 +26,17 @@ namespace CreacionBotones
         {
 
         }
+
+        private void BotonPersonalizado31_MouseEnter(object sender, EventArgs e)
+        {
+            botonPersonalizado31.BackColor = botonPersonalizado31.BorderColor;
+            botonPersonalizado31.TextColor = Color.White; 
+        }
+        private void BotonPersonalizado31_MouseLeave(object sender, EventArgs e)
+        {
+            botonPersonalizado31.BackColor = Color.Transparent;
+            botonPersonalizado31.TextColor = Color.Black;
+        }
+
     }
 }

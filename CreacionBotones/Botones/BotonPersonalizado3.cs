@@ -7,15 +7,16 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
+using System.Diagnostics;
 
 namespace CreacionBotones
 {
-    public class BotonPersonalizado2 : Button
+    public class BotonPersonalizado3 : Button
     {
         //Fields
-        private int borderSize = 1;
+        private int borderSize = 2;
         private int borderRadius = 0;
-        private Color borderColor = Color.Black;
+        private Color borderColor = Color.Blue;
 
         //Properties
         [Category("RJ Code Advance")]
@@ -62,12 +63,12 @@ namespace CreacionBotones
         }
 
         //Constructor
-        public BotonPersonalizado2()
+        public BotonPersonalizado3()
         {
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 2;
             this.Size = new Size(150, 40);
-            this.BackColor = Color.White;
+            this.BackColor = Color.Transparent;
             this.ForeColor = Color.Black;
             this.Resize += new EventHandler(Button_Resize);
         }
