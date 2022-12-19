@@ -28,49 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Left = new MouseTester.BotonPersonalizado3();
+            this.Right = new MouseTester.BotonPersonalizado3();
             this.SuspendLayout();
             // 
-            // button1
+            // Left
             // 
-            this.button1.Location = new System.Drawing.Point(247, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.form1_MouseMove);
+            this.Left.BackColor = System.Drawing.Color.Transparent;
+            this.Left.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Left.BorderColor = System.Drawing.Color.Blue;
+            this.Left.BorderRadius = 0;
+            this.Left.BorderSize = 2;
+            this.Left.FlatAppearance.BorderSize = 2;
+            this.Left.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Left.ForeColor = System.Drawing.Color.Black;
+            this.Left.Location = new System.Drawing.Point(148, 292);
+            this.Left.Name = "Left";
+            this.Left.Size = new System.Drawing.Size(150, 40);
+            this.Left.TabIndex = 0;
+            this.Left.Text = "Left";
+            this.Left.TextColor = System.Drawing.Color.Black;
+            this.Left.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // Right
             // 
-            this.button2.Location = new System.Drawing.Point(506, 304);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.form1_MouseMove);
+            this.Right.BackColor = System.Drawing.Color.Transparent;
+            this.Right.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Right.BorderColor = System.Drawing.Color.Crimson;
+            this.Right.BorderRadius = 0;
+            this.Right.BorderSize = 2;
+            this.Right.FlatAppearance.BorderSize = 2;
+            this.Right.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Right.ForeColor = System.Drawing.Color.Black;
+            this.Right.Location = new System.Drawing.Point(407, 292);
+            this.Right.Name = "Right";
+            this.Right.Size = new System.Drawing.Size(150, 40);
+            this.Right.TabIndex = 1;
+            this.Right.Text = "Right";
+            this.Right.TextColor = System.Drawing.Color.Black;
+            this.Right.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(739, 450);
+            this.Controls.Add(this.Right);
+            this.Controls.Add(this.Left);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Esperando entrada del mouse";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.MouseLeave += new System.EventHandler(this.Exit_MouseLeave);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.form1_MouseMove);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private BotonPersonalizado3 Left;
+        private BotonPersonalizado3 Right;
     }
 }
 
