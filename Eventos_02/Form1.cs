@@ -16,6 +16,7 @@ namespace Eventos_02
         public Form1()
         {
             InitializeComponent();
+            this.AcceptButton = botonRGB;
         }
 
         private void exit_Click(object sender, EventArgs e)
