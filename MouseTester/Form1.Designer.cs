@@ -28,27 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Left = new MouseTester.BotonPersonalizado3();
             this.Right = new MouseTester.BotonPersonalizado3();
+            this.Left = new MouseTester.BotonPersonalizado3();
             this.SuspendLayout();
-            // 
-            // Left
-            // 
-            this.Left.BackColor = System.Drawing.Color.Transparent;
-            this.Left.BackgroundColor = System.Drawing.Color.Transparent;
-            this.Left.BorderColor = System.Drawing.Color.Blue;
-            this.Left.BorderRadius = 0;
-            this.Left.BorderSize = 2;
-            this.Left.FlatAppearance.BorderSize = 2;
-            this.Left.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Left.ForeColor = System.Drawing.Color.Black;
-            this.Left.Location = new System.Drawing.Point(148, 292);
-            this.Left.Name = "Left";
-            this.Left.Size = new System.Drawing.Size(150, 40);
-            this.Left.TabIndex = 0;
-            this.Left.Text = "Left";
-            this.Left.TextColor = System.Drawing.Color.Black;
-            this.Left.UseVisualStyleBackColor = false;
             // 
             // Right
             // 
@@ -67,17 +49,42 @@
             this.Right.Text = "Right";
             this.Right.TextColor = System.Drawing.Color.Black;
             this.Right.UseVisualStyleBackColor = false;
+            this.Right.MouseMove += new System.Windows.Forms.MouseEventHandler(this.form1_MouseMove);
+            // 
+            // Left
+            // 
+            this.Left.BackColor = System.Drawing.Color.Transparent;
+            this.Left.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Left.BorderColor = System.Drawing.Color.Blue;
+            this.Left.BorderRadius = 0;
+            this.Left.BorderSize = 2;
+            this.Left.FlatAppearance.BorderSize = 2;
+            this.Left.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Left.ForeColor = System.Drawing.Color.Black;
+            this.Left.Location = new System.Drawing.Point(148, 292);
+            this.Left.Name = "Left";
+            this.Left.Size = new System.Drawing.Size(150, 40);
+            this.Left.TabIndex = 0;
+            this.Left.Text = "Left";
+            this.Left.TextColor = System.Drawing.Color.Black;
+            this.Left.UseVisualStyleBackColor = false;
+            this.Left.MouseMove += new System.Windows.Forms.MouseEventHandler(this.form1_MouseMove);
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(739, 450);
             this.Controls.Add(this.Right);
             this.Controls.Add(this.Left);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Esperando entrada del mouse";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.close_Click);
+            this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Tecla_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.MouseLeave += new System.EventHandler(this.Exit_MouseLeave);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.form1_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             this.ResumeLayout(false);
 
         }

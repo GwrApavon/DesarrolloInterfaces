@@ -1,0 +1,11 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\bin\Debug\Eventos_02.exe.config
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\bin\Debug\Eventos_02.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\bin\Debug\Eventos_02.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\obj\Debug\Eventos_02.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\obj\Debug\Eventos_02.csproj.SuggestedBindingRedirects.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\obj\Debug\Eventos_02.Properties.Resources.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\obj\Debug\Eventos_02.csproj.GenerateResource.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\obj\Debug\Eventos_02.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\obj\Debug\Eventos_02.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\obj\Debug\Eventos_02.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Eventos_02\obj\Debug\Eventos_02.Form1.resources
