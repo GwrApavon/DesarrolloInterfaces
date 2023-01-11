@@ -16,15 +16,14 @@ namespace Eventos_02
         public Form1()
         {
             InitializeComponent();
-            this.AcceptButton = botonRGB;
         }
 
-        private void exit_Click(object sender, EventArgs e)
+        private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void salida(object sender, FormClosingEventArgs e)
+        private void Salida(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("¿Está seguro que desea abandonar la aplicación?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
 
@@ -41,20 +40,86 @@ namespace Eventos_02
         private void Tecla_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
             if (e.KeyCode == System.Windows.Forms.Keys.Escape)Application.Exit();
-            if (e.KeyCode == System.Windows.Forms.Keys.Enter) botonRGB_Click(sender, e);
-
+            if (e.KeyCode == System.Windows.Forms.Keys.Enter && !ComprobarURLVisible()) BotonRGB_Click(sender, e);
+            if (e.KeyCode == System.Windows.Forms.Keys.Enter && ComprobarURLVisible()) botonURL_Click(sender, e);
         }
 
-        private void botonRGB_Click(object sender, EventArgs e)
+        private void BotonRGB_Click(object sender, EventArgs e)
         {
-            int valor1 = Convert.ToInt32(textBox1.Text);
-            int valor2 = Convert.ToInt32(textBox2.Text);
-            int valor3 = Convert.ToInt32(textBox3.Text);
-            if ((valor1 >= 0 && valor1 <= 255)&& (valor2 >= 0 && valor2 <= 255)&&
-                (valor3 >= 0 && valor3 <= 255))
+            try
             {
-                this.BackColor = Color.FromArgb(valor1, valor2, valor3);
+                int valor1 = Convert.ToInt32(textBox1.Text);
+                int valor2 = Convert.ToInt32(textBox2.Text);
+                int valor3 = Convert.ToInt32(textBox3.Text);
+
+                valor1 = ComprobarInt(valor1);
+                valor2 = ComprobarInt(valor2);
+                valor3 = ComprobarInt(valor3);
+
+                if ((valor1 >= 0 && valor1 <= 255) && (valor2 >= 0 && valor2 <= 255) &&
+                (valor3 >= 0 && valor3 <= 255))
+                {
+                    this.BackColor = Color.FromArgb(valor1, valor2, valor3);
+                }
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+        private int ComprobarInt(int i)
+        {
+            if(i < 0) i = 0;
+            if(i > 255) i = 255;
+            return i;
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            url.Visible = false;
+            botonURL.Visible = false;
+            Cursor = Cursors.Hand;
+        }
+
+        private void Swap_Click(object sender, EventArgs e)
+        {
+            if (ComprobarURLVisible())
+            {
+                url.Visible= false;
+                botonURL.Visible = false;
+
+                textBox1.Visible = true;
+                textBox2.Visible = true;
+                textBox3.Visible = true;
+                botonRGB.Visible = true;
+            }
+            else
+            {
+                url.Visible = true;
+                botonURL.Visible = true; 
+
+                textBox1.Visible = false;
+                textBox2.Visible = false;
+                textBox3.Visible = false;
+                botonRGB.Visible = false;
+            }
+        }
+
+        private bool ComprobarURLVisible()
+        {
+            if (url.Visible) return true;
+            return false;
+        }
+
+        private void botonURL_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = new Bitmap(url.Text);
+        }
+
+        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Bitmap bitmap = new Bitmap("\\Eventos_02\\Imagenes\\cursorMorado.png");
+            this.Cursor = new Cursor(bitmap.GetHicon());
         }
     }
 }
