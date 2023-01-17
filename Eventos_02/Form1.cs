@@ -116,10 +116,18 @@ namespace Eventos_02
             this.BackgroundImage = new Bitmap(url.Text);
         }
 
-        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        private void Button_MouseEnter(object sender, EventArgs e)
         {
-            Bitmap bitmap = new Bitmap("\\Eventos_02\\Imagenes\\cursorMorado.png");
-            this.Cursor = new Cursor(bitmap.GetHicon());
+            Button bs = (Button)sender;
+            bs.BackColor = Color.White;
+            bs.ForeColor = Color.Black;  
+        }
+
+        private void Button_MouseLeave(object sender, EventArgs e)
+        {
+            Button bs = (Button)sender;
+            bs.BackColor = Color.Indigo;
+            bs.ForeColor = Color.White;
         }
     }
 }

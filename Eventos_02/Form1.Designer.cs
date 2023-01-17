@@ -90,7 +90,9 @@
             this.botonURL.TextColor = System.Drawing.Color.White;
             this.botonURL.UseVisualStyleBackColor = false;
             this.botonURL.Click += new System.EventHandler(this.botonURL_Click);
-            this.botonURL.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Button_MouseEnter);
+            this.botonURL.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Tecla_KeyDown);
+            this.botonURL.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.botonURL.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // Swap
             // 
@@ -133,7 +135,8 @@
             this.botonRGB.UseVisualStyleBackColor = false;
             this.botonRGB.Click += new System.EventHandler(this.BotonRGB_Click);
             this.botonRGB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Tecla_KeyDown);
-            this.botonRGB.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Button_MouseEnter);
+            this.botonRGB.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.botonRGB.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // exit
             // 
@@ -155,7 +158,8 @@
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.Exit_Click);
             this.exit.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Tecla_KeyDown);
-            this.exit.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Button_MouseEnter);
+            this.exit.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.exit.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // Form1
             // 

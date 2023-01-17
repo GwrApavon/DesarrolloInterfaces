@@ -1,0 +1,11 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\bin\Debug\SimonDice.exe.config
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\bin\Debug\SimonDice.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\bin\Debug\SimonDice.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\obj\Debug\SimonDice.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\obj\Debug\SimonDice.csproj.SuggestedBindingRedirects.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\obj\Debug\SimonDice.Form1.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\obj\Debug\SimonDice.Properties.Resources.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\obj\Debug\SimonDice.csproj.GenerateResource.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\obj\Debug\SimonDice.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\obj\Debug\SimonDice.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\SimonDice\obj\Debug\SimonDice.pdb
