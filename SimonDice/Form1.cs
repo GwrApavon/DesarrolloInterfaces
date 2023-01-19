@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Media;
+using System.IO;
 
 namespace SimonDice
 {
@@ -48,7 +49,6 @@ namespace SimonDice
                 SecuenceControl = 0;
                 SimonSays.Add(Rnd.Next(0,4));
                 Thread.Sleep(1000);
-                new Thread(GameStart).Start();
             }
             score.Text = SimonSays.Count.ToString();
         }
@@ -95,7 +95,18 @@ namespace SimonDice
         {
             String Pressed = ((PictureBox)sender).Name;
             string[] NumberButton = Pressed.Split('_');
-            VerifyPressedButton(Convert.ToInt32(NumberButton[1])); 
+            VerifyPressedButton(Convert.ToInt32(NumberButton[1]));
+            SoundPlayer s;
+
+            try
+            {
+                s = new SoundPlayer(Application.StartupPath + @"\resources\pong.wav");
+                s.Play();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message); 
+            }
         }
 
         private void Bluebutton_MouseDown(object sender, MouseEventArgs e)

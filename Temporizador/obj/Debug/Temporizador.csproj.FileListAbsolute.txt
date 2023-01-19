@@ -1,0 +1,11 @@
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\bin\Debug\Temporizador.exe.config
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\bin\Debug\Temporizador.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\bin\Debug\Temporizador.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.csproj.AssemblyReference.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.csproj.SuggestedBindingRedirects.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.Properties.Resources.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.csproj.GenerateResource.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.csproj.CoreCompileInputs.cache
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.exe
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.pdb
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.Form1.resources

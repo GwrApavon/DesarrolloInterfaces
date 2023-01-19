@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C11ABB71-0709-4851-A366-870640F1925F}</ProjectGuid>
+    <ProjectGuid>{392F4736-62F1-4C67-B5DA-C668F277380F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SimonDice</RootNamespace>
-    <AssemblyName>SimonDice</AssemblyName>
+    <RootNamespace>Temporizador</RootNamespace>
+    <AssemblyName>Temporizador</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Botones\BotonPersonalizado1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Botones\BotonPersonalizado2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Botones\BotonPersonalizado3.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,18 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pong.wav" />
-    <None Include="Resources\ponglong.wav" />
-    <Content Include="Resources\SimonDiceBlue.png" />
-    <Content Include="Resources\SimonDiceBlueShiny.png" />
-    <Content Include="Resources\SimonDiceGreen.png" />
-    <Content Include="Resources\SimonDiceGreenShiny.png" />
-    <Content Include="Resources\SimonDiceRed.png" />
-    <Content Include="Resources\SimonDiceRedShiny.png" />
-    <Content Include="Resources\SimonDiceYellow.png" />
-    <Content Include="Resources\SimonDiceYellowShiny.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

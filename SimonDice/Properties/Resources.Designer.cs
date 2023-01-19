@@ -61,6 +61,24 @@ namespace SimonDice.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream pong {
+            get {
+                return ResourceManager.GetStream("pong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ponglong {
+            get {
+                return ResourceManager.GetStream("ponglong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap SimonDiceBlue {

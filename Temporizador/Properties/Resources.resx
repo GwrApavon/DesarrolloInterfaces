@@ -118,34 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pong.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BotonPersonalizado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Botones\BotonPersonalizado1.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="ponglong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ponglong.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BotonPersonalizado2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Botones\BotonPersonalizado2.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="SimonDiceBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SimonDiceBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SimonDiceBlueShiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SimonDiceBlueShiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SimonDiceGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SimonDiceGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SimonDiceGreenShiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SimonDiceGreenShiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SimonDiceRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SimonDiceRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SimonDiceRedShiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SimonDiceRedShiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SimonDiceYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SimonDiceYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SimonDiceYellowShiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SimonDiceYellowShiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BotonPersonalizado3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Botones\BotonPersonalizado3.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>
