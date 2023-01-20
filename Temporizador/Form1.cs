@@ -32,72 +32,74 @@ namespace Temporizador
 
         private void Start_Click(object sender, EventArgs e)
         {
+            Thread td = new Thread(Temporizador);
             if (Start.Text.Equals("START"))
             {
                 Start.Text = "STOP";
-                stop = false;
+                td.Start();
             }
             else
             {
                 Start.Text = "START";
-                stop = true;
-            }
+                try
+                {
+                    td.Abort();
+                }catch(Exception ex)
+                {
 
-            while(stop == false)
-            {
-                stop = Temporizador();
-                Thread.Sleep(1000);
-            }
-                
-            
+                }
+            } 
         }
 
-        private bool Temporizador()
+        private void Temporizador()
         {
+            do
+            {
+                if (segundos == 0)
+                {
+                    segundos = 59;
+                    minutos--;
+                }
+                else if (minutos == 0 && segundos == 0)
+                {
+                    segundos = 59;
+                    minutos = 59;
+                    horas--;
+                }
+                else
+                {
+                    segundos--;
+                }
+                string txtSegundos = segundos.ToString();
+                string txtMinutos = minutos.ToString();
+                string txtHoras = horas.ToString();
 
-            if (segundos == 0)
-            {
-                segundos = 59;
-                minutos--;
-            }
-            else if (minutos == 0 && segundos == 0)
-            {
-                segundos = 59;
-                minutos = 59;
-                horas--;
-            }
-            else
-            {
-                segundos--;
-            }
-            string txtSegundos = segundos.ToString();
-            string txtMinutos = minutos.ToString();
-            string txtHoras = horas.ToString();
+                if (txtSegundos.Length == 1)
+                {
+                    txtSegundos = "0" + txtSegundos;
+                }
+                else if (txtMinutos.Length == 1)
+                {
+                    txtMinutos = "0" + txtMinutos;
+                }
+                else if (txtHoras.Length == 1)
+                {
+                    txtHoras = "0" + txtHoras;
+                }
 
-            if (txtSegundos.Length == 1)
-            {
-                txtSegundos = "0" + txtSegundos;
-            }
-            else if (txtMinutos.Length == 1)
-            {
-                txtMinutos = "0" + txtMinutos;
-            }
-            else if (txtHoras.Length == 1)
-            {
-                txtHoras = "0" + txtHoras;
-            }
+                if (horas == 0)
+                {
+                    digits.Text = txtMinutos + ":" + txtSegundos;
+                }
+                else if (horas != 0)
+                {
+                    digits.Text = txtHoras + ":" + txtMinutos + ":" + txtSegundos;
+                }
 
-            if (horas == 0)
-            {
-                digits.Text = txtMinutos + ":" + txtSegundos;
-            }
-            else if (horas != 0)
-            {
-                digits.Text = txtHoras + ":" + txtMinutos + ":" + txtSegundos;
-            }
+                Thread.Sleep(1000);
 
-            if (horas == 0 && minutos == 0 && segundos == 0) return true;
-            return false;
+            } while (horas == 0 && minutos == 0 && segundos == 0);
+
         }
     }
     
