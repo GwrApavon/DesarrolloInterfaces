@@ -8,4 +8,5 @@ D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Tempor
 D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.csproj.CoreCompileInputs.cache
 D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.exe
 D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.pdb
-D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.Form1.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.Form2.resources
+D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.mainForm.resources
