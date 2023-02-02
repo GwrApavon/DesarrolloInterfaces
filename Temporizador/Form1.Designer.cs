@@ -115,6 +115,7 @@
             this.Reset.Text = "RESET";
             this.Reset.TextColor = System.Drawing.Color.Black;
             this.Reset.UseVisualStyleBackColor = false;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
             // Edit
             // 

@@ -19,25 +19,43 @@ namespace Temporizador
 {
     public partial class mainForm : Form
     {
-        private const string HORAS = "0";
-        private const string MINUTOS = "0";
-        private const string SEGUNDOS = "5";
+        private int horasInicio;
+        private int minutosInicio;
+        private int segundosInicio;
         private int horas;
         private int minutos;
         private int segundos;
         public int count;
         public bool popUp;
+        public bool restart;
+        public bool crono;
         public mainForm()
         {
             InitializeComponent();
-            horas = Convert.ToInt32(HORAS);
-            minutos = Convert.ToInt32(MINUTOS);
-            segundos = Convert.ToInt32(SEGUNDOS);
+            popUp = true;
+            restart = true;
+            crono = false;
+            horas = 0;
+            minutos = 0;
+            segundos = 5;
+            horasInicio = horas;
+            minutosInicio = minutos;
+            segundosInicio = segundos;
             count = horas * 3600 + minutos * 60 + segundos;
             digits.Text = FormatTimer(count);
         }
         public mainForm(Form callingForms)
-        {     
+        {
+            popUp = true;
+            restart = true;
+            crono= false;
+            horas = 0;
+            minutos = 4;
+            segundos = 0;
+            horasInicio = horas;
+            minutosInicio = minutos;
+            segundosInicio = segundos;
+            count = horas * 3600 + minutos * 60 + segundos;
         }
 
         private void Edit_Click(object sender, EventArgs e)
@@ -55,6 +73,12 @@ namespace Temporizador
             fm2.ShowDialog();
         }
         private void Start_Click(object sender, EventArgs e)
+        {
+            Iniciar();
+
+        }
+
+        private void Iniciar()
         {
             if (!timer2.Enabled)
             {
@@ -74,8 +98,6 @@ namespace Temporizador
                 timer2.Enabled = false;
                 timer2.Tick -= new EventHandler(Temporizador);
             }
-            
-            
         }
 
         private void Temporizador(object sender, EventArgs e)
@@ -90,6 +112,14 @@ namespace Temporizador
                 if (popUp)
                 {
                     MessageBox.Show("Se ha terminado el tiempo", "Temporizador");
+                }
+                if (restart)
+                {
+                    Reiniciar();
+                }
+                if (crono)
+                {
+                    //Cronometro();
                 }
 
             }
@@ -153,8 +183,19 @@ namespace Temporizador
                 Start.Visible = true;
                 Reset.Visible = true;
                 Edit.Visible = true;
-                digits.Text = MINUTOS + ":" + SEGUNDOS;
+                digits.Text = minutosInicio + ":" + segundosInicio;
             }
+        }
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            Reiniciar();
+        }
+
+        private void Reiniciar()
+        {
+            count = horasInicio * 3600 + minutosInicio * 60 + segundosInicio;
+            digits.Text = FormatTimer(count);
         }
     }
     
