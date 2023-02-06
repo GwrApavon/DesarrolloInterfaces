@@ -17,24 +17,26 @@ using System.Net.NetworkInformation;
 
 namespace Temporizador
 {
-    public partial class mainForm : Form
+    public partial class MainForm : Form
     {
-        private int horasInicio;
-        private int minutosInicio;
-        private int segundosInicio;
-        private int horas;
-        private int minutos;
-        private int segundos;
+        public int horasInicio;
+        public int minutosInicio;
+        public int segundosInicio;
+        public int horas;
+        public int minutos;
+        public int segundos;
         public int count;
         public bool popUp;
         public bool restart;
         public bool crono;
-        public mainForm()
+        public bool cdStop;
+        public MainForm()
         {
             InitializeComponent();
             popUp = true;
-            restart = true;
-            crono = false;
+            restart = false;
+            crono = true;
+            cdStop = false;
             horas = 0;
             minutos = 0;
             segundos = 5;
@@ -44,18 +46,21 @@ namespace Temporizador
             count = horas * 3600 + minutos * 60 + segundos;
             digits.Text = FormatTimer(count);
         }
-        public mainForm(Form callingForms)
+
+        public MainForm(Form CallingForms)
         {
+            InitializeComponent();
             popUp = true;
-            restart = true;
-            crono= false;
+            restart = false;
+            crono = true;
             horas = 0;
-            minutos = 4;
-            segundos = 0;
+            minutos = 0;
+            segundos = 5;
             horasInicio = horas;
             minutosInicio = minutos;
             segundosInicio = segundos;
             count = horas * 3600 + minutos * 60 + segundos;
+            digits.Text = FormatTimer(count);
         }
 
         private void Edit_Click(object sender, EventArgs e)
@@ -69,13 +74,30 @@ namespace Temporizador
 
         private void LlamadaForm2() 
         { 
-            Form2 fm2 = new Form2();
+            Form2 fm2 = new Form2(this);
             fm2.ShowDialog();
         }
         private void Start_Click(object sender, EventArgs e)
         {
-            Iniciar();
+            if (timer3.Enabled)
+            {
+                DisableEverything();
+            }
+            else if (!timer3.Enabled)
+            {
+                Iniciar();
+            }
+        }
 
+        private void DisableEverything()
+        {
+            Start.BackColor = Color.Green;
+            Start.BorderColor = Color.Green;
+            Start.Text = "START";
+            timer2.Enabled = false;
+            timer2.Tick -= new EventHandler(Temporizador);
+            timer3.Enabled = false;
+            timer3.Tick -= new EventHandler(Cronometro);
         }
 
         private void Iniciar()
@@ -100,34 +122,41 @@ namespace Temporizador
             }
         }
 
+        
         private void Temporizador(object sender, EventArgs e)
         {
-            if (count == 0)
+            if (count > 0 && !cdStop)
             {
+                count--;
+                digits.Text = FormatTimer(count);
+            }
+            if (count == 0)
+            {  
                 timer2.Stop();
-                Start.BackColor = Color.Green;
-                Start.BorderColor = Color.Green;
-                Start.Text = "START";
-                timer2.Enabled = false;
                 if (popUp)
                 {
                     MessageBox.Show("Se ha terminado el tiempo", "Temporizador");
                 }
                 if (restart)
                 {
+                    timer2.Start();
                     Reiniciar();
-                }
-                if (crono)
+                }        
+                if (!restart && !crono)
                 {
-                    //Cronometro();
+                    Start.BackColor = Color.Green;
+                    Start.BorderColor = Color.Green;
+                    Start.Text = "START";
                 }
-
-            }
-            if (count > 0)
-            {
-                count--;
-                digits.Text = FormatTimer(count);  
-            }
+                if (crono && count == 0)
+                {
+                    cdStop = true;
+                    timer3.Enabled = true;
+                    timer3.Tick += new EventHandler(Cronometro);
+                    timer3.Interval = 1000;
+                    timer3.Start();
+                }
+            }     
         }
 
         private string FormatTimer(int count)
@@ -139,15 +168,15 @@ namespace Temporizador
             string txtMinutos = minutos.ToString();
             string txtHoras = horas.ToString();
 
-            if (txtSegundos.Length == 1)
+            if (txtSegundos.Length <= 1)
             {
                 txtSegundos = "0" + txtSegundos;
             }
-            else if (txtMinutos.Length == 1)
+            else if (txtMinutos.Length <= 1)
             {
                 txtMinutos = "0" + txtMinutos;
             }
-            else if (txtHoras.Length == 1)
+            else if (txtHoras.Length <= 1)
             {
                 txtHoras = "0" + txtHoras;
             }
@@ -196,6 +225,13 @@ namespace Temporizador
         {
             count = horasInicio * 3600 + minutosInicio * 60 + segundosInicio;
             digits.Text = FormatTimer(count);
+        }
+
+        private void Cronometro(object sender, EventArgs e)
+        {
+            count+=1;
+            digits.Text = FormatTimer(count);
+            
         }
     }
     

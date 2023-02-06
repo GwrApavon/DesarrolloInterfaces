@@ -1,6 +1,6 @@
 ﻿namespace Temporizador
 {
-    partial class mainForm
+    partial class MainForm
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -37,6 +37,8 @@
             this.Edit = new CreacionBotones.BotonPersonalizado2();
             this.Start = new CreacionBotones.BotonPersonalizado2();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.Crno = new CreacionBotones.BotonPersonalizado2();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // digits
@@ -155,18 +157,39 @@
             this.Start.UseVisualStyleBackColor = false;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
-            // mainForm
+            // Crno
+            // 
+            this.Crno.BackColor = System.Drawing.Color.White;
+            this.Crno.BackgroundColor = System.Drawing.Color.White;
+            this.Crno.BorderColor = System.Drawing.Color.Black;
+            this.Crno.BorderRadius = 0;
+            this.Crno.BorderSize = 1;
+            this.Crno.FlatAppearance.BorderSize = 2;
+            this.Crno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Crno.ForeColor = System.Drawing.Color.Black;
+            this.Crno.Location = new System.Drawing.Point(12, 104);
+            this.Crno.Name = "Crno";
+            this.Crno.Size = new System.Drawing.Size(85, 40);
+            this.Crno.TabIndex = 10;
+            this.Crno.Text = "Temporizador";
+            this.Crno.TextColor = System.Drawing.Color.Black;
+            this.Crno.UseVisualStyleBackColor = false;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Crno);
             this.Controls.Add(this.timer);
             this.Controls.Add(this.Reloj);
             this.Controls.Add(this.digits);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.Start);
-            this.Name = "mainForm";
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Name = "MainForm";
             this.Text = "Temporizador";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -183,6 +206,8 @@
         private CreacionBotones.BotonPersonalizado2 Reloj;
         private CreacionBotones.BotonPersonalizado2 timer;
         private System.Windows.Forms.Timer timer2;
+        private CreacionBotones.BotonPersonalizado2 Crno;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 

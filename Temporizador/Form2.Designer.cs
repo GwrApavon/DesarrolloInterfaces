@@ -37,8 +37,8 @@
             this.segundos = new System.Windows.Forms.ComboBox();
             this.Cancel = new CreacionBotones.BotonPersonalizado2();
             this.Aceptar = new CreacionBotones.BotonPersonalizado2();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.Restart = new System.Windows.Forms.CheckBox();
+            this.Crono = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // hrs
@@ -84,8 +84,6 @@
             // horas
             // 
             this.horas.FormattingEnabled = true;
-            this.horas.Items.AddRange(new object[] {
-            "123456789"});
             this.horas.Location = new System.Drawing.Point(33, 52);
             this.horas.Name = "horas";
             this.horas.Size = new System.Drawing.Size(121, 21);
@@ -145,33 +143,33 @@
             this.Aceptar.UseVisualStyleBackColor = false;
             this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click);
             // 
-            // checkBox1
+            // Restart
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(322, 186);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(67, 17);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Reiniciar";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.Restart.AutoSize = true;
+            this.Restart.Location = new System.Drawing.Point(322, 186);
+            this.Restart.Name = "Restart";
+            this.Restart.Size = new System.Drawing.Size(67, 17);
+            this.Restart.TabIndex = 13;
+            this.Restart.Text = "Reiniciar";
+            this.Restart.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // Crono
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(322, 209);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(139, 17);
-            this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "Iniciar como cronómetro";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.Crono.AutoSize = true;
+            this.Crono.Location = new System.Drawing.Point(322, 209);
+            this.Crono.Name = "Crono";
+            this.Crono.Size = new System.Drawing.Size(139, 17);
+            this.Crono.TabIndex = 14;
+            this.Crono.Text = "Iniciar como cronómetro";
+            this.Crono.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 272);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.Crono);
+            this.Controls.Add(this.Restart);
             this.Controls.Add(this.segundos);
             this.Controls.Add(this.minutos);
             this.Controls.Add(this.horas);
@@ -198,7 +196,7 @@
         private System.Windows.Forms.ComboBox horas;
         private System.Windows.Forms.ComboBox minutos;
         private System.Windows.Forms.ComboBox segundos;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox Restart;
+        private System.Windows.Forms.CheckBox Crono;
     }
 }
