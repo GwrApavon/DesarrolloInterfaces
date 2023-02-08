@@ -15,77 +15,103 @@ namespace Temporizador
 {
     public partial class Form2 : Form
     {
+        private MainForm mf = null;
         string[] nums;
+        string[] nums2;
         public Form2()
         {
             InitializeComponent();       
         }
 
-        public Form2(Form eForm)
+        public Form2(Form form)
         {
+            mf = form as MainForm;
             InitializeComponent();
-            string[] nums = RellenarArray();
-            horas.Items.AddRange(nums);
-            minutos.Items.AddRange(nums);
-            segundos.Items.AddRange(nums);
+            nums = RellenarArray();
+            nums2 = RellenarArrayHoras();
+            timePicker.Value = DateTime.Now;
+            if (mf.Alarm)
+            {
+                Popup.Visible = false;
+                Restart.Visible = false;    
+                Crono.Visible = false;   
+                horas.Visible = false;
+                minutos.Visible = false;
+                segundos.Visible = false;
+                hrs.Visible = false;
+                mnts.Visible = false;
+                scds.Visible = false;
+                horas.Items.AddRange(nums2);
+                minutos.Items.AddRange(nums);
+                segundos.Items.AddRange(nums);
+            }
+            else
+            {
+                Popup.Visible = true;
+                Restart.Visible = true;
+                Crono.Visible = true;
+                horas.Items.AddRange(nums);
+                minutos.Items.AddRange(nums);
+                segundos.Items.AddRange(nums);
+            }
         }
         
         private void Aceptar_Click(object sender, EventArgs e)
         {
-            MainForm mf = new MainForm(this);
-            if (string.IsNullOrEmpty(horas.Text))
+            if (mf.Timer)
             {
-                mf.horas = 0;
-                mf.horasInicio = 0;
+                if (string.IsNullOrEmpty(horas.Text))
+                {
+                    mf.horasInicio = 0;
+                }
+                else
+                {
+                    mf.horasInicio = Convert.ToInt32(horas.Text); ;
+                }
+                if (string.IsNullOrEmpty(minutos.Text))
+                {
+                    mf.minutosInicio = 0;
+                }
+                else
+                {
+                    mf.minutosInicio = Convert.ToInt32(minutos.Text);
+                }
+                if (string.IsNullOrEmpty(segundos.Text))
+                {
+                    mf.segundosInicio = 0;
+                }
+                else
+                {
+                    mf.segundosInicio = Convert.ToInt32(segundos.Text);
+                }
+                if (Popup.Checked)
+                {
+                    mf.popUp = true;
+                }
+                else
+                {
+                    mf.popUp = false;
+                }
+                if (Restart.Checked)
+                {
+                    mf.restart = true;
+                }
+                else
+                {
+                    mf.restart = false;
+                }
+                if (Crono.Checked)
+                {
+                    mf.crono = true;
+                }
+                else
+                {
+                    mf.crono = false;
+                }
             }
-            else
+            if (mf.Alarm)
             {
-                mf.horas = Convert.ToInt32(horas.Text);
-                mf.horasInicio = Convert.ToInt32(horas.Text); ;
-            }
-            if (string.IsNullOrEmpty(minutos.Text))
-            {
-                mf.minutos = 0;
-                mf.minutosInicio = 0;
-            }
-            else
-            {
-                mf.minutos = Convert.ToInt32(minutos.Text);
-                mf.minutosInicio = Convert.ToInt32(minutos.Text);
-            }
-            if (string.IsNullOrEmpty(segundos.Text))
-            {
-                mf.segundos = 0;
-                mf.segundosInicio= 0;
-            }
-            else
-            {
-                mf.segundos = Convert.ToInt32(segundos.Text);
-                mf.segundosInicio = Convert.ToInt32(segundos.Text);
-            }
-            if (Popup.Checked)
-            {
-                mf.popUp = true;
-            }
-            else
-            {
-                mf.popUp = false;
-            }
-            if (Restart.Checked)
-            {
-                mf.restart = true;
-            }
-            else
-            {
-                mf.restart = false;
-            }
-            if (Crono.Checked)
-            {
-                mf.crono = true;
-            }
-            else
-            {
-                mf.crono = false;
+                 mf.AlarmValue = timePicker.Value;                
             }
             this.Hide();
         }
@@ -97,15 +123,37 @@ namespace Temporizador
 
         public string[] RellenarArray()
         {
-            string[] nums = new string[100];
+            string[] nums = new string[60];
 
             nums[0] = "0";
-            for (int i = 1; i < 100; i++)
+            for (int i = 1; i < 60; i++)
             {
                 nums[i] = i.ToString();
             }
 
             return nums;
+        }
+        public string[] RellenarArrayHoras()
+        {
+            string[] nums = new string[13];
+
+            nums[0] = "0";
+            for (int i = 1; i < 13; i++)
+            {
+                nums[i] = i.ToString();
+            }
+
+            return nums;
+        }
+
+        private void Restart_CheckedChanged(object sender, EventArgs e)
+        {
+            Crono.Checked = false;
+        }
+
+        private void Crono_CheckedChanged(object sender, EventArgs e)
+        {
+            Restart.Checked = false;
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.hrs = new System.Windows.Forms.Label();
             this.mnts = new System.Windows.Forms.Label();
             this.scds = new System.Windows.Forms.Label();
@@ -35,10 +36,12 @@
             this.horas = new System.Windows.Forms.ComboBox();
             this.minutos = new System.Windows.Forms.ComboBox();
             this.segundos = new System.Windows.Forms.ComboBox();
-            this.Cancel = new CreacionBotones.BotonPersonalizado2();
-            this.Aceptar = new CreacionBotones.BotonPersonalizado2();
             this.Restart = new System.Windows.Forms.CheckBox();
             this.Crono = new System.Windows.Forms.CheckBox();
+            this.Cancel = new CreacionBotones.BotonPersonalizado2();
+            this.Aceptar = new CreacionBotones.BotonPersonalizado2();
+            this.timePicker = new System.Windows.Forms.DateTimePicker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // hrs
@@ -105,6 +108,28 @@
             this.segundos.Size = new System.Drawing.Size(121, 21);
             this.segundos.TabIndex = 12;
             // 
+            // Restart
+            // 
+            this.Restart.AutoSize = true;
+            this.Restart.Location = new System.Drawing.Point(322, 186);
+            this.Restart.Name = "Restart";
+            this.Restart.Size = new System.Drawing.Size(67, 17);
+            this.Restart.TabIndex = 13;
+            this.Restart.Text = "Reiniciar";
+            this.Restart.UseVisualStyleBackColor = true;
+            this.Restart.CheckedChanged += new System.EventHandler(this.Restart_CheckedChanged);
+            // 
+            // Crono
+            // 
+            this.Crono.AutoSize = true;
+            this.Crono.Location = new System.Drawing.Point(322, 209);
+            this.Crono.Name = "Crono";
+            this.Crono.Size = new System.Drawing.Size(139, 17);
+            this.Crono.TabIndex = 14;
+            this.Crono.Text = "Iniciar como cronómetro";
+            this.Crono.UseVisualStyleBackColor = true;
+            this.Crono.CheckedChanged += new System.EventHandler(this.Crono_CheckedChanged);
+            // 
             // Cancel
             // 
             this.Cancel.BackColor = System.Drawing.Color.White;
@@ -143,31 +168,21 @@
             this.Aceptar.UseVisualStyleBackColor = false;
             this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click);
             // 
-            // Restart
+            // timePicker
             // 
-            this.Restart.AutoSize = true;
-            this.Restart.Location = new System.Drawing.Point(322, 186);
-            this.Restart.Name = "Restart";
-            this.Restart.Size = new System.Drawing.Size(67, 17);
-            this.Restart.TabIndex = 13;
-            this.Restart.Text = "Reiniciar";
-            this.Restart.UseVisualStyleBackColor = true;
-            // 
-            // Crono
-            // 
-            this.Crono.AutoSize = true;
-            this.Crono.Location = new System.Drawing.Point(322, 209);
-            this.Crono.Name = "Crono";
-            this.Crono.Size = new System.Drawing.Size(139, 17);
-            this.Crono.TabIndex = 14;
-            this.Crono.Text = "Iniciar como cronómetro";
-            this.Crono.UseVisualStyleBackColor = true;
+            this.timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timePicker.Location = new System.Drawing.Point(128, 79);
+            this.timePicker.Name = "timePicker";
+            this.timePicker.Size = new System.Drawing.Size(200, 20);
+            this.timePicker.TabIndex = 15;
+            this.timePicker.Value = new System.DateTime(2023, 2, 8, 9, 40, 0, 0);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 272);
+            this.Controls.Add(this.timePicker);
             this.Controls.Add(this.Crono);
             this.Controls.Add(this.Restart);
             this.Controls.Add(this.segundos);
@@ -198,5 +213,7 @@
         private System.Windows.Forms.ComboBox segundos;
         private System.Windows.Forms.CheckBox Restart;
         private System.Windows.Forms.CheckBox Crono;
+        private System.Windows.Forms.DateTimePicker timePicker;
+        private System.Windows.Forms.Timer timer1;
     }
 }

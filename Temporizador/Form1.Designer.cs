@@ -39,7 +39,7 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.Crno = new CreacionBotones.BotonPersonalizado2();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.Alarm = new CreacionBotones.BotonPersonalizado2();
+            this.alarm = new CreacionBotones.BotonPersonalizado2();
             this.SuspendLayout();
             // 
             // digits
@@ -177,25 +177,25 @@
             this.Crno.UseVisualStyleBackColor = false;
             this.Crno.Click += new System.EventHandler(this.Crno_Click);
             // 
-            // Alarm
+            // alarm
             // 
-            this.Alarm.BackColor = System.Drawing.Color.White;
-            this.Alarm.BackgroundColor = System.Drawing.Color.White;
-            this.Alarm.BorderColor = System.Drawing.Color.Black;
-            this.Alarm.BorderRadius = 0;
-            this.Alarm.BorderSize = 1;
-            this.Alarm.FlatAppearance.BorderSize = 2;
-            this.Alarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Alarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Alarm.ForeColor = System.Drawing.Color.Black;
-            this.Alarm.Location = new System.Drawing.Point(12, 150);
-            this.Alarm.Name = "Alarm";
-            this.Alarm.Size = new System.Drawing.Size(85, 40);
-            this.Alarm.TabIndex = 11;
-            this.Alarm.Text = "Alarma";
-            this.Alarm.TextColor = System.Drawing.Color.Black;
-            this.Alarm.UseVisualStyleBackColor = false;
-            this.Alarm.Click += new System.EventHandler(this.Alarm_Click);
+            this.alarm.BackColor = System.Drawing.Color.White;
+            this.alarm.BackgroundColor = System.Drawing.Color.White;
+            this.alarm.BorderColor = System.Drawing.Color.Black;
+            this.alarm.BorderRadius = 0;
+            this.alarm.BorderSize = 1;
+            this.alarm.FlatAppearance.BorderSize = 2;
+            this.alarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.alarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.alarm.ForeColor = System.Drawing.Color.Black;
+            this.alarm.Location = new System.Drawing.Point(12, 150);
+            this.alarm.Name = "alarm";
+            this.alarm.Size = new System.Drawing.Size(85, 40);
+            this.alarm.TabIndex = 11;
+            this.alarm.Text = "Alarma";
+            this.alarm.TextColor = System.Drawing.Color.Black;
+            this.alarm.UseVisualStyleBackColor = false;
+            this.alarm.Click += new System.EventHandler(this.Alarm_Click);
             // 
             // MainForm
             // 
@@ -203,7 +203,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Alarm);
+            this.Controls.Add(this.alarm);
             this.Controls.Add(this.Crno);
             this.Controls.Add(this.timer);
             this.Controls.Add(this.Reloj);
@@ -231,7 +231,7 @@
         private System.Windows.Forms.Timer timer2;
         private CreacionBotones.BotonPersonalizado2 Crno;
         private System.Windows.Forms.Timer timer3;
-        private CreacionBotones.BotonPersonalizado2 Alarm;
+        private CreacionBotones.BotonPersonalizado2 alarm;
     }
 }
 
