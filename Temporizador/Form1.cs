@@ -65,11 +65,23 @@ namespace Temporizador
 
         private void Edit_Click(object sender, EventArgs e)
         {
-
-            Thread abrirForm2 = new Thread(LlamadaForm2);
-            abrirForm2.Start();
-            abrirForm2.Join();
-            digits.Text = FormatTimer(count);
+            if (Reset.Visible == true)
+            {
+                Thread abrirForm2 = new Thread(LlamadaForm2);
+                abrirForm2.Start();
+                abrirForm2.Join();
+                digits.Text = FormatTimer(count);
+            }
+            if (Reset.Visible == false)
+            {
+                Start.BackColor = Color.Green;
+                Start.BorderColor = Color.Green;
+                Start.Text = "START";
+                timer3.Enabled = false;
+                timer3.Tick -= new EventHandler(Cronometro);
+                count= 0;
+                digits.Text = FormatTimer(count);
+            }
         }
 
         private void LlamadaForm2() 
@@ -77,15 +89,23 @@ namespace Temporizador
             Form2 fm2 = new Form2(this);
             fm2.ShowDialog();
         }
+
         private void Start_Click(object sender, EventArgs e)
         {
-            if (timer3.Enabled)
+            if (Reset.Visible == true)
             {
-                DisableEverything();
+                if (timer3.Enabled)
+                {
+                    DisableEverything();
+                }
+                else if (!timer3.Enabled)
+                {
+                    Iniciar();
+                }
             }
-            else if (!timer3.Enabled)
+            if (Reset.Visible == false)
             {
-                Iniciar();
+                IniciarCrono();
             }
         }
 
@@ -122,7 +142,28 @@ namespace Temporizador
             }
         }
 
-        
+        private void IniciarCrono()
+        {
+            if (!timer3.Enabled)
+            {
+                Start.BackColor = Color.Red;
+                Start.BorderColor = Color.Red;
+                Start.Text = "STOP";
+                timer3.Enabled = true;
+                timer3.Tick += new EventHandler(Cronometro);
+                timer3.Interval = 1000;
+                timer3.Start();
+            }
+            else
+            {
+                Start.BackColor = Color.Green;
+                Start.BorderColor = Color.Green;
+                Start.Text = "START";
+                timer3.Enabled = false;
+                timer3.Tick -= new EventHandler(Cronometro);
+            }
+        }
+
         private void Temporizador(object sender, EventArgs e)
         {
             if (count > 0 && !cdStop)
@@ -199,6 +240,8 @@ namespace Temporizador
         private void Reloj_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            timer2.Enabled = false;
+            timer3.Enabled = false;
             Start.Visible = false;
             Reset.Visible = false;
             Edit.Visible = false;
@@ -212,6 +255,8 @@ namespace Temporizador
                 Start.Visible = true;
                 Reset.Visible = true;
                 Edit.Visible = true;
+                Edit.Text = "EDIT";
+                Edit.BackColor = Color.CornflowerBlue;
                 digits.Text = minutosInicio + ":" + segundosInicio;
             }
         }
@@ -232,6 +277,20 @@ namespace Temporizador
             count+=1;
             digits.Text = FormatTimer(count);
             
+        }
+
+        private void Alarm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Crno_Click(object sender, EventArgs e)
+        {
+            count = 0;
+            digits.Text = FormatTimer(count);
+            Reset.Visible = false;
+            Edit.Text = "RESTART";
+            Edit.BackColor = Color.Orange;
         }
     }
     

@@ -10,3 +10,15 @@ D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Tempor
 D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.pdb
 D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.Form2.resources
 D:\Ángel Pavón\WS - Desarrollo de Interfaces(C#)\Temporizador\obj\Debug\Temporizador.mainForm.resources
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\bin\Debug\Temporizador.exe.config
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\bin\Debug\Temporizador.exe
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\bin\Debug\Temporizador.pdb
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\obj\Debug\Temporizador.csproj.AssemblyReference.cache
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\obj\Debug\Temporizador.csproj.SuggestedBindingRedirects.cache
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\obj\Debug\Temporizador.MainForm.resources
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\obj\Debug\Temporizador.Form2.resources
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\obj\Debug\Temporizador.Properties.Resources.resources
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\obj\Debug\Temporizador.csproj.GenerateResource.cache
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\obj\Debug\Temporizador.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\obj\Debug\Temporizador.exe
+C:\Users\angel\Desktop\DAM2\WS - Desarrollo de interfaces\VisualStudio\Temporizador\obj\Debug\Temporizador.pdb

@@ -39,6 +39,7 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.Crno = new CreacionBotones.BotonPersonalizado2();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.Alarm = new CreacionBotones.BotonPersonalizado2();
             this.SuspendLayout();
             // 
             // digits
@@ -47,11 +48,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.digits.AutoSize = true;
-            this.digits.Font = new System.Drawing.Font("Stencil", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digits.Font = new System.Drawing.Font("Impact", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.digits.Location = new System.Drawing.Point(216, 135);
             this.digits.MinimumSize = new System.Drawing.Size(350, 0);
             this.digits.Name = "digits";
-            this.digits.Size = new System.Drawing.Size(350, 114);
+            this.digits.Size = new System.Drawing.Size(350, 117);
             this.digits.TabIndex = 7;
             this.digits.Text = "00:00";
             this.digits.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,8 +103,8 @@
             // 
             // Reset
             // 
-            this.Reset.BackColor = System.Drawing.Color.LightGray;
-            this.Reset.BackgroundColor = System.Drawing.Color.LightGray;
+            this.Reset.BackColor = System.Drawing.Color.Orange;
+            this.Reset.BackgroundColor = System.Drawing.Color.Orange;
             this.Reset.BorderColor = System.Drawing.Color.LightGray;
             this.Reset.BorderRadius = 0;
             this.Reset.BorderSize = 1;
@@ -121,8 +122,8 @@
             // 
             // Edit
             // 
-            this.Edit.BackColor = System.Drawing.Color.LightGray;
-            this.Edit.BackgroundColor = System.Drawing.Color.LightGray;
+            this.Edit.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Edit.BackgroundColor = System.Drawing.Color.CornflowerBlue;
             this.Edit.BorderColor = System.Drawing.Color.LightGray;
             this.Edit.BorderRadius = 0;
             this.Edit.BorderSize = 1;
@@ -171,9 +172,30 @@
             this.Crno.Name = "Crno";
             this.Crno.Size = new System.Drawing.Size(85, 40);
             this.Crno.TabIndex = 10;
-            this.Crno.Text = "Temporizador";
+            this.Crno.Text = "Cronometro";
             this.Crno.TextColor = System.Drawing.Color.Black;
             this.Crno.UseVisualStyleBackColor = false;
+            this.Crno.Click += new System.EventHandler(this.Crno_Click);
+            // 
+            // Alarm
+            // 
+            this.Alarm.BackColor = System.Drawing.Color.White;
+            this.Alarm.BackgroundColor = System.Drawing.Color.White;
+            this.Alarm.BorderColor = System.Drawing.Color.Black;
+            this.Alarm.BorderRadius = 0;
+            this.Alarm.BorderSize = 1;
+            this.Alarm.FlatAppearance.BorderSize = 2;
+            this.Alarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Alarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Alarm.ForeColor = System.Drawing.Color.Black;
+            this.Alarm.Location = new System.Drawing.Point(12, 150);
+            this.Alarm.Name = "Alarm";
+            this.Alarm.Size = new System.Drawing.Size(85, 40);
+            this.Alarm.TabIndex = 11;
+            this.Alarm.Text = "Alarma";
+            this.Alarm.TextColor = System.Drawing.Color.Black;
+            this.Alarm.UseVisualStyleBackColor = false;
+            this.Alarm.Click += new System.EventHandler(this.Alarm_Click);
             // 
             // MainForm
             // 
@@ -181,6 +203,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Alarm);
             this.Controls.Add(this.Crno);
             this.Controls.Add(this.timer);
             this.Controls.Add(this.Reloj);
@@ -208,6 +231,7 @@
         private System.Windows.Forms.Timer timer2;
         private CreacionBotones.BotonPersonalizado2 Crno;
         private System.Windows.Forms.Timer timer3;
+        private CreacionBotones.BotonPersonalizado2 Alarm;
     }
 }
 
