@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Botones\BotonPersonalizado1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Botones\BotonPersonalizado2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Botones\BotonPersonalizado3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Botones\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Socios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\prestamo30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fp1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

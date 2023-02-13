@@ -79,7 +79,6 @@ namespace GUI_MODERNISTA
                 panelForms.Tag= formulario;
                 formulario.Show();
                 formulario.BringToFront();
-                formulario.FormClosed += new FormClosedEventHandler(CloseForms);
             }
             //Form no existe
             else 
@@ -91,44 +90,66 @@ namespace GUI_MODERNISTA
         {
             AbrirForm<LogIn>();
             UserAcc.BackColor = Color.FromArgb(45, 55, 69);
+            Book.BackColor = Color.FromArgb(26, 32, 40);
+            Member.BackColor = Color.FromArgb(26, 32, 40);
+            Loan.BackColor = Color.FromArgb(26, 32, 40);
         }
 
         private void Book_Click(object sender, EventArgs e)
         {
             AbrirForm<Libros>();
+            UserAcc.BackColor = Color.FromArgb(26, 32, 40);
             Book.BackColor = Color.FromArgb(45, 55, 69);
+            Member.BackColor = Color.FromArgb(26, 32, 40);
+            Loan.BackColor = Color.FromArgb(26, 32, 40);
         }
 
         private void Member_Click(object sender, EventArgs e)
         {
             AbrirForm<Socios>();
+            UserAcc.BackColor = Color.FromArgb(26, 32, 40);
+            Book.BackColor = Color.FromArgb(26, 32, 40);
             Member.BackColor = Color.FromArgb(45, 55, 69);
+            Loan.BackColor = Color.FromArgb(26, 32, 40);
         }
 
         private void Loan_Click(object sender, EventArgs e)
         {
             AbrirForm<Prestamos>();
+            UserAcc.BackColor = Color.FromArgb(26, 32, 40);
+            Book.BackColor = Color.FromArgb(26, 32, 40);
+            Member.BackColor = Color.FromArgb(26, 32, 40);
             Loan.BackColor = Color.FromArgb(45, 55, 69);
         }
 
-        private void CloseForms(Object sender, FormClosedEventArgs e)
+        private void CloseForms()
         {
-            if (Application.OpenForms["LogIn"] == null)
+            if (Application.OpenForms["LogIn"] != null)
             {
-                Loan.BackColor = Color.FromArgb(26, 32, 40);
+                Application.OpenForms["LogIn"].Close();
             }
-            if (Application.OpenForms["Libros"] == null)
+            if (Application.OpenForms["Libros"] != null)
             {
-                Loan.BackColor = Color.FromArgb(26, 32, 40);
+                Application.OpenForms["Libros"].Close();
             }
-            if (Application.OpenForms["Socios"] == null)
+            if (Application.OpenForms["Socios"] != null)
             {
-                Loan.BackColor = Color.FromArgb(26, 32, 40);
+                Application.OpenForms["Socios"].Close();
             }
-            if (Application.OpenForms["Prestamos"] == null)
+            if (Application.OpenForms["Prestamos"] != null)
             {
-                Loan.BackColor = Color.FromArgb(26, 32, 40);
+                Application.OpenForms["Prestamos"].Close();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
+
+        private void Reset()
+        {
+            CloseForms();
         }
     }
 }

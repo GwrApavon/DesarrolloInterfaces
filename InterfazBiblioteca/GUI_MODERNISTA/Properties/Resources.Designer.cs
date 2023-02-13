@@ -103,6 +103,16 @@ namespace GUI_MODERNISTA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fp1 {
+            get {
+                object obj = ResourceManager.GetObject("fp1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap libro30px {
             get {
                 object obj = ResourceManager.GetObject("libro30px", resourceCulture);
