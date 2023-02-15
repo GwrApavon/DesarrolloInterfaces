@@ -12,9 +12,6 @@ namespace GUI_MODERNISTA
 {
     public partial class LogIn : Form
     {
-        private int cont = 0;
-
-        private MainApp mApp;
         public LogIn()
         {
             InitializeComponent();

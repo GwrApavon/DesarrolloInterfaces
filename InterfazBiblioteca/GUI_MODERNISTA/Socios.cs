@@ -21,5 +21,10 @@ namespace GUI_MODERNISTA
         {
 
         }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

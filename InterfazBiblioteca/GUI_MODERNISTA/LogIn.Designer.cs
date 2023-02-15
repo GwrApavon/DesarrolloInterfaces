@@ -104,7 +104,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1064, 69);
+            this.panel1.Size = new System.Drawing.Size(1064, 61);
             this.panel1.TabIndex = 7;
             // 
             // label1
@@ -121,10 +121,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::GUI_MODERNISTA.Properties.Resources.fp;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 134);
+            this.pictureBox1.Image = global::GUI_MODERNISTA.Properties.Resources.biblioteca;
+            this.pictureBox1.Location = new System.Drawing.Point(99, 120);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(394, 352);
+            this.pictureBox1.Size = new System.Drawing.Size(321, 384);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
