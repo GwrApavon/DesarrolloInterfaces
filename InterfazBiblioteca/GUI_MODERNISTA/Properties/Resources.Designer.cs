@@ -103,6 +103,16 @@ namespace GUI_MODERNISTA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cruz {
+            get {
+                object obj = ResourceManager.GetObject("cruz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fp {
             get {
                 object obj = ResourceManager.GetObject("fp", resourceCulture);
@@ -133,6 +143,16 @@ namespace GUI_MODERNISTA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Minimizar {
+            get {
+                object obj = ResourceManager.GetObject("Minimizar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap prestamo30px {
             get {
                 object obj = ResourceManager.GetObject("prestamo30px", resourceCulture);
@@ -156,6 +176,36 @@ namespace GUI_MODERNISTA.Properties {
         internal static System.Drawing.Bitmap socios30px {
             get {
                 object obj = ResourceManager.GetObject("socios30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VentanaMax {
+            get {
+                object obj = ResourceManager.GetObject("VentanaMax", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VentanaMax1 {
+            get {
+                object obj = ResourceManager.GetObject("VentanaMax1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VentanaMIni {
+            get {
+                object obj = ResourceManager.GetObject("VentanaMIni", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

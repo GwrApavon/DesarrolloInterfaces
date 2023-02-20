@@ -89,37 +89,37 @@ namespace GUI_MODERNISTA
         private void UserAcc_Click(object sender, EventArgs e)
         {
             AbrirForm<LogIn>();
-            UserAcc.BackColor = Color.FromArgb(45, 55, 69);
-            Book.BackColor = Color.FromArgb(26, 32, 40);
-            Member.BackColor = Color.FromArgb(26, 32, 40);
-            Loan.BackColor = Color.FromArgb(26, 32, 40);
+            UserAcc.BackColor = Color.FromArgb(255, 159, 48);
+            Book.BackColor = Color.FromArgb(244, 159, 28);
+            Member.BackColor = Color.FromArgb(244, 159, 28);
+            Loan.BackColor = Color.FromArgb(244, 159, 28);
         }
 
         private void Book_Click(object sender, EventArgs e)
         {
             AbrirForm<Libros>();
-            UserAcc.BackColor = Color.FromArgb(26, 32, 40);
-            Book.BackColor = Color.FromArgb(45, 55, 69);
-            Member.BackColor = Color.FromArgb(26, 32, 40);
-            Loan.BackColor = Color.FromArgb(26, 32, 40);
+            UserAcc.BackColor = Color.FromArgb(244, 159, 28);
+            Book.BackColor = Color.FromArgb(255, 159, 48);
+            Member.BackColor = Color.FromArgb(244, 159, 28);
+            Loan.BackColor = Color.FromArgb(244, 159, 28);
         }
 
         private void Member_Click(object sender, EventArgs e)
         {
             AbrirForm<Socios>();
-            UserAcc.BackColor = Color.FromArgb(26, 32, 40);
-            Book.BackColor = Color.FromArgb(26, 32, 40);
-            Member.BackColor = Color.FromArgb(45, 55, 69);
-            Loan.BackColor = Color.FromArgb(26, 32, 40);
+            UserAcc.BackColor = Color.FromArgb(244, 159, 28);
+            Book.BackColor = Color.FromArgb(244, 159, 28);
+            Member.BackColor = Color.FromArgb(255, 159, 48);
+            Loan.BackColor = Color.FromArgb(244, 159, 28);
         }
 
         private void Loan_Click(object sender, EventArgs e)
         {
             AbrirForm<Prestamos>();
-            UserAcc.BackColor = Color.FromArgb(26, 32, 40);
-            Book.BackColor = Color.FromArgb(26, 32, 40);
-            Member.BackColor = Color.FromArgb(26, 32, 40);
-            Loan.BackColor = Color.FromArgb(45, 55, 69);
+            UserAcc.BackColor = Color.FromArgb(244, 159, 28);
+            Book.BackColor = Color.FromArgb(244, 159, 28);
+            Member.BackColor = Color.FromArgb(244, 159, 28);
+            Loan.BackColor = Color.FromArgb(255, 159, 48);
         }
 
         private void CloseForms()

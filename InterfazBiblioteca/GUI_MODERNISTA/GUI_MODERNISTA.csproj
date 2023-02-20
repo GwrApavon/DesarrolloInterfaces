@@ -157,6 +157,21 @@
   <ItemGroup>
     <None Include="Resources\biblioteca.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cruz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VentanaMIni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VentanaMax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VentanaMax1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

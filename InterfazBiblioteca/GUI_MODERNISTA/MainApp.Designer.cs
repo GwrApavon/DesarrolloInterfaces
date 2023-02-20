@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainApp));
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MenuVertical = new System.Windows.Forms.Panel();
@@ -59,7 +58,7 @@
             // 
             // BarraTitulo
             // 
-            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(47)))), ((int)(((byte)(69)))));
             this.BarraTitulo.Controls.Add(this.btnRestaurar);
             this.BarraTitulo.Controls.Add(this.btnMinimizar);
             this.BarraTitulo.Controls.Add(this.btnMaximizar);
@@ -81,7 +80,7 @@
             // 
             // MenuVertical
             // 
-            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.MenuVertical.Controls.Add(this.panel4);
             this.MenuVertical.Controls.Add(this.Loan);
             this.MenuVertical.Controls.Add(this.panel3);
@@ -100,7 +99,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(0, 248);
+            this.panel4.Location = new System.Drawing.Point(0, 282);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 32);
             this.panel4.TabIndex = 8;
@@ -108,7 +107,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel3.Location = new System.Drawing.Point(0, 210);
+            this.panel3.Location = new System.Drawing.Point(0, 232);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(5, 32);
             this.panel3.TabIndex = 6;
@@ -116,14 +115,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(0, 172);
+            this.panel2.Location = new System.Drawing.Point(0, 183);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(5, 32);
             this.panel2.TabIndex = 4;
             // 
             // panelForms
             // 
-            this.panelForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.panelForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
             this.panelForms.Controls.Add(this.pictureBox2);
             this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForms.Location = new System.Drawing.Point(220, 38);
@@ -133,25 +132,26 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::GUI_MODERNISTA.Properties.Resources.biblioteca;
-            this.pictureBox2.Location = new System.Drawing.Point(247, 98);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(669, 391);
+            this.pictureBox2.Size = new System.Drawing.Size(1080, 612);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // Loan
             // 
-            this.Loan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.Loan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.Loan.FlatAppearance.BorderSize = 0;
             this.Loan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.Loan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Loan.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loan.ForeColor = System.Drawing.Color.White;
+            this.Loan.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Loan.ForeColor = System.Drawing.Color.Black;
             this.Loan.Image = global::GUI_MODERNISTA.Properties.Resources.prestamo30px;
             this.Loan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Loan.Location = new System.Drawing.Point(3, 248);
+            this.Loan.Location = new System.Drawing.Point(3, 282);
             this.Loan.Name = "Loan";
             this.Loan.Size = new System.Drawing.Size(217, 32);
             this.Loan.TabIndex = 7;
@@ -161,15 +161,15 @@
             // 
             // Member
             // 
-            this.Member.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.Member.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.Member.FlatAppearance.BorderSize = 0;
             this.Member.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.Member.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Member.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Member.ForeColor = System.Drawing.Color.White;
+            this.Member.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Member.ForeColor = System.Drawing.Color.Black;
             this.Member.Image = global::GUI_MODERNISTA.Properties.Resources.socios30px;
             this.Member.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Member.Location = new System.Drawing.Point(3, 210);
+            this.Member.Location = new System.Drawing.Point(3, 232);
             this.Member.Name = "Member";
             this.Member.Size = new System.Drawing.Size(217, 32);
             this.Member.TabIndex = 5;
@@ -179,15 +179,15 @@
             // 
             // Book
             // 
-            this.Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.Book.FlatAppearance.BorderSize = 0;
             this.Book.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Book.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Book.ForeColor = System.Drawing.Color.White;
+            this.Book.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Book.ForeColor = System.Drawing.Color.Black;
             this.Book.Image = global::GUI_MODERNISTA.Properties.Resources.libro30px;
             this.Book.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Book.Location = new System.Drawing.Point(3, 172);
+            this.Book.Location = new System.Drawing.Point(3, 183);
             this.Book.Name = "Book";
             this.Book.Size = new System.Drawing.Size(217, 32);
             this.Book.TabIndex = 3;
@@ -197,12 +197,12 @@
             // 
             // UserAcc
             // 
-            this.UserAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.UserAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.UserAcc.FlatAppearance.BorderSize = 0;
             this.UserAcc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.UserAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UserAcc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserAcc.ForeColor = System.Drawing.Color.White;
+            this.UserAcc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserAcc.ForeColor = System.Drawing.Color.Black;
             this.UserAcc.Image = global::GUI_MODERNISTA.Properties.Resources._30px;
             this.UserAcc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UserAcc.Location = new System.Drawing.Point(3, 134);
@@ -215,10 +215,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
             this.pictureBox1.Image = global::GUI_MODERNISTA.Properties.Resources.fp;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 102);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -228,7 +229,8 @@
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
+            this.btnRestaurar.Image = global::GUI_MODERNISTA.Properties.Resources.VentanaMIni;
+            this.btnRestaurar.InitialImage = global::GUI_MODERNISTA.Properties.Resources.VentanaMax;
             this.btnRestaurar.Location = new System.Drawing.Point(1221, 6);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
@@ -242,7 +244,7 @@
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Image = global::GUI_MODERNISTA.Properties.Resources.Minimizar;
             this.btnMinimizar.Location = new System.Drawing.Point(1180, 6);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
@@ -255,7 +257,7 @@
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Image = global::GUI_MODERNISTA.Properties.Resources.VentanaMax1;
             this.btnMaximizar.Location = new System.Drawing.Point(1221, 6);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
@@ -268,7 +270,7 @@
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Image = global::GUI_MODERNISTA.Properties.Resources.cruz;
             this.btnCerrar.Location = new System.Drawing.Point(1262, 6);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(26, 25);
