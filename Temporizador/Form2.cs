@@ -50,6 +50,7 @@ namespace Temporizador
                 Popup.Visible = true;
                 Restart.Visible = true;
                 Crono.Visible = true;
+                timePicker.Visible= false;
                 horas.Items.AddRange(nums);
                 minutos.Items.AddRange(nums);
                 segundos.Items.AddRange(nums);
